@@ -69,6 +69,24 @@ export default {
   components: {
     Software,
   },
+  created() {
+    const doc = {
+      hello: 'world',
+      n: 5,
+      today: new Date(),
+      nedbIsAwesome: true,
+      notthere: null,
+      notToBeSaved: undefined, // Will not be saved
+      fruits: ['apple', 'orange', 'pear'],
+      infos: { name: 'nedb' },
+    };
+
+    this.$db.insert(doc);
+    // Find all documents in the collection
+    this.$db.find({}, (err, docs) => {
+      console.log(docs);
+    });
+  },
   methods: {},
 };
 </script>
