@@ -12,7 +12,6 @@ Vue.use(ViewUI);
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'));
 Vue.axios = Vue.prototype.$axios = axios;
 Vue.config.productionTip = false;
-console.log(db);
 Vue.prototype.$db = db;
 /* eslint-disable no-new */
 new Vue({

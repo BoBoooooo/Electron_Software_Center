@@ -83,9 +83,9 @@ export default {
 
     this.$db.insert(doc);
     // Find all documents in the collection
-    this.$db.find({}, (err, docs) => {
-      console.log(docs);
-    });
+    // this.$db.find({}, (err, docs) => {
+    //   console.log(docs);
+    // });
   },
   methods: {},
 };
