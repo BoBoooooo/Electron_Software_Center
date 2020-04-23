@@ -9,5 +9,5 @@ import Datastore from 'nedb';
 
 export default new Datastore({
   autoload: true,
-  filename: './data.db',
+  filename: './db/data.db',
 });
